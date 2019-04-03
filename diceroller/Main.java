@@ -100,8 +100,10 @@ public class Main extends Application {
                 }
             }
 
+            lineProcessor.close();
             System.out.println();
         }
+        lineReader.close();
     }
 
     // appends everything in the given ArrayList of modifiers to the end of the given file. In all cases, the given file is the Database.txt file.

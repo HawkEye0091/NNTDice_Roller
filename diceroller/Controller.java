@@ -18,6 +18,7 @@ public class Controller implements Initializable {
     public ChoiceBox<Modifier> startingModifierBox;
     public TextArea outputArea;
     public TextArea currentModifiersField;
+    @FXML private TextField omakeValueBox;
 
     public TextField createModifierValue;
     public TextField createModifierDescription;
@@ -61,6 +62,14 @@ public class Controller implements Initializable {
         Modifier chosenModifier = startingModifierBox.getValue();
         currentModifiersField.appendText(chosenModifier.toString() + "\n");
         selectedModifiers.add(chosenModifier);
+    }
+
+    public void handleSetOmake() {
+        int value = Integer.parseInt(omakeValueBox.getText());
+        Modifier omakeModifier = new Modifier(value, "Omake", false);
+
+        selectedModifiers.add(omakeModifier);
+        currentModifiersField.appendText(omakeModifier.toString() + "\n");
     }
 
     public void handleRollDice() {
