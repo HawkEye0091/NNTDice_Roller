@@ -1,0 +1,62 @@
+25 Akami: false
+25 Sachi: false
+5 Learned to play games: false
+16 Handsome: false
+12 Manners: false
+15 A Friendly Guy: false
+25 Raised with Dogs: false
+76 Music: true 19
+50 Chakra control: false
+51 Wise: false
+32 Smart: false
+61 Fit: false
+33 Tactics: false
+38 Blade Song: false
+74 Stealth: false
+30 Poison resistance: false
+10 Agility: false
+30 Cooking: false
+15 Tracking: false
+38 Surgeon: false
+23 Teacher: false
+34 Business: false
+10 Making Your Own Luck: false
+5 Veteran of the Eastern Front: false
+19 Sakumo: false
+12 Haruna: false
+20 Kakashi: false
+14 Shiroko: false
+16 Yoruichi: false
+12 Yuki: false
+15 Senju: false
+5 Tsunade: false
+11 Shizune: false
+20 Nemo: false
+14 Orihime: false
+8 Hyuuga: false
+16 Shibue: false
+10 Anko: false
+10 Mara: false
+17 Chouchou: false
+10 Uchiha: false
+10 Rin: false
+10 Teiru: false
+5 Koyuki: false
+30 Team 6: false
+21 Kushina: false
+5 Erza: false
+12 Sona: false
+13 Juniper: false
+5 Miki: false
+5 Momo: false
+9 Gai: false
+5 Ebisu: false
+5 Chouza: false
+5 Suki: false
+6 Azula: false
+5 Mei: false
+5 Inoue: false
+12 Sakura: false
+24 Sobieru (Social): false
+7 Sobieru (Event): false
+10 Mercenary Senses: false

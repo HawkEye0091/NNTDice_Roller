@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diceroller.Controller">
+   <children>
+      <HBox prefHeight="147.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="147.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="createModifierValue" promptText="Modifier Value">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="30.0" top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button fx:id="createModifierSubmit" mnemonicParsing="false" onAction="#handleCreateModifier" text="Create Modifier">
+                     <VBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="147.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="createModifierDescription" promptText="Modifier Description">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="30.0" right="30.0" top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label prefHeight="17.0" prefWidth="222.0" text="Critical Values: (Critical True Only)">
+                     <VBox.margin>
+                        <Insets left="10.0" top="70.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="147.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <RadioButton fx:id="createCriticalTrue" mnemonicParsing="false" onAction="#handleToggleYesAction" text="Critical True">
+                     <VBox.margin>
+                        <Insets left="20.0" top="25.0" />
+                     </VBox.margin>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="criticalToggle" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="createCriticalFalse" mnemonicParsing="false" onAction="#handleToggleNoAction" prefHeight="17.0" prefWidth="173.0" text="Critical False" toggleGroup="$criticalToggle">
+                     <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </VBox.margin>
+                  </RadioButton>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="250.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="createModifierFirstCritical" promptText="1st Critical Roll">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="30.0" right="30.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="createModifierFourthCritical" promptText="4th Critical Roll">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="250.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="createModifierSecondCritical" prefHeight="25.0" prefWidth="267.0" promptText="2nd Critical Roll">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="30.0" right="30.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="createModifierFifthCritical" promptText="5th Critical Roll">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="250.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="createModifierThirdCritical" promptText="3rd Critical Roll">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="30.0" right="30.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="createModifierSixthCritical" promptText="6th Critical Roll">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <TextArea fx:id="createOutputArea" prefHeight="200.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </TextArea>
+   </children>
+</VBox>
