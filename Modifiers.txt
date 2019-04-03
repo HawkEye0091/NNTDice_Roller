@@ -1,62 +1,103 @@
-25 Akami: false
-25 Sachi: false
+30 Akami: false
+30 Sachi: false
 5 Learned to play games: false
-16 Handsome: false
-12 Manners: false
+18 Handsome: false
+13 Manners: false
 15 A Friendly Guy: false
+11 Romantic: false
 25 Raised with Dogs: false
-76 Music: true 19
+78 Music: true 20
 50 Chakra control: false
-51 Wise: false
-32 Smart: false
-61 Fit: false
-33 Tactics: false
-38 Blade Song: false
-74 Stealth: false
-30 Poison resistance: false
+62 Wise: false
+80 Perception: false
+39 Smart: false
+64 Fit: false
+34 Tactics: false
+41 Blade Song: false
+77 Stealth: false
+48 Poison resistance: false
 10 Agility: false
-30 Cooking: false
+43 Cooking: false
 15 Tracking: false
-38 Surgeon: false
-23 Teacher: false
-34 Business: false
-10 Making Your Own Luck: false
+46 Surgeon: false
+26 Teacher: false
+40 Masseur: false
+35 Business: false
+14 Making Your Own Luck: false
 5 Veteran of the Eastern Front: false
-19 Sakumo: false
-12 Haruna: false
-20 Kakashi: false
-14 Shiroko: false
-16 Yoruichi: false
-12 Yuki: false
+21 Sakumo: false
+20 Haruna: false
+23 Kakashi: false
+21 Shiroko: false
+6 Hakuro: false
+5 Nikko: false
+5 Amaya: false
+26 Yoruichi: false
+20 Yuki: false
+22 Su: false
+7 Isane: false
 15 Senju: false
 5 Tsunade: false
-11 Shizune: false
-20 Nemo: false
-14 Orihime: false
+14 Shizune: false
+28 Nemo: false
+15 Orihime: false
 8 Hyuuga: false
-16 Shibue: false
-10 Anko: false
-10 Mara: false
-17 Chouchou: false
-10 Uchiha: false
+28 Shibue: false
+21 Aburame: false
+13 Anko: false
+11 Mara: false
+18 Chouchou: false
+10 Akimichi: false
+17 Uchiha: false
+10 Obito: false
+10 Fugaku: false
+6 Mikoto: false
 10 Rin: false
 10 Teiru: false
-5 Koyuki: false
-30 Team 6: false
-21 Kushina: false
-5 Erza: false
-12 Sona: false
-13 Juniper: false
-5 Miki: false
-5 Momo: false
-9 Gai: false
+10 Inuzuka: false
+10 Koyuki: false
+35 Team 6: false
+27 Kushina: false
+12 Erza: false
+13 Hiroki: false
+8 Wuya: false
+19 Uzumaki: false
+14 Sona: false
+19 Juniper: false
+20 Miki: false
+6 Momo: false
+11 Gai: false
 5 Ebisu: false
+5 Genma: false
+7 Ibiki: false
 5 Chouza: false
 5 Suki: false
 6 Azula: false
 5 Mei: false
 5 Inoue: false
+5 Kaede: false
+11 Setsuna: false
+5 Konoka: false
+5 Kenshin: false
+5 Minato: false
+5 Nono: false
+5 Karasuba: false
+6 Pakura: false
+6 Tenzin: false
+1 Baki: false
+6 Sasori: false
+5 Chiyo: false
+8 Hiruma: false
+15 Yurei: false
+5 Koharu: false
+1 Kenichi: false
+5 Korra: false
+8 Maui: false
+7 Aya: false
+12 Sayuri: false
 12 Sakura: false
-24 Sobieru (Social): false
-7 Sobieru (Event): false
-10 Mercenary Senses: false
+29 Sobieru (Social): false
+10 Sobieru (Event): false
+-10 Guts (Social/Stealth): false
+12 Mercenary Senses: false
+5 Jak: false
