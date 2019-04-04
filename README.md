@@ -5,4 +5,5 @@ To add new modifiers, use the included GUI tool through the (Create) button, or 
 
 I encourage you to freely modify the "Modifiers.txt" file, as it may be inaccurate. If you see an inaccuracy, or a modifier has updated, feel free to open an issue or edit it yourself and launch a commit request.
 
-![alt text](https://i.imgur.com/5pTr8tz.png "Example Picture")
+![alt text](https://i.imgur.com/JXrjM7y.png "Example Picture")
+![alt text](https://imgur.com/Evw8oso.png "Example Picture")
