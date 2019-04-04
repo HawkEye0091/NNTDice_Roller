@@ -19,6 +19,8 @@ public class Controller implements Initializable {
     public TextArea outputArea;
     public TextArea currentModifiersField;
     @FXML private TextField omakeValueBox;
+    @FXML private TextField temporaryValueBox;
+    @FXML private TextField temporaryDescriptionBox;
 
     public TextField createModifierValue;
     public TextField createModifierDescription;
@@ -63,13 +65,16 @@ public class Controller implements Initializable {
         currentModifiersField.appendText(chosenModifier.toString() + "\n");
         selectedModifiers.add(chosenModifier);
     }
-
-    public void handleSetOmake() {
-        int value = Integer.parseInt(omakeValueBox.getText());
-        Modifier omakeModifier = new Modifier(value, "Omake", false);
-
-        selectedModifiers.add(omakeModifier);
-        currentModifiersField.appendText(omakeModifier.toString() + "\n");
+    
+    public void handleClearModifiers() {
+    	selectedModifiers.removeAll(selectedModifiers);
+    	currentModifiersField.clear();
+    }
+    
+    public void handleAddTemporary() {
+    	Modifier temporaryModifier = new Modifier(Integer.parseInt(temporaryValueBox.getText()), temporaryDescriptionBox.getText(), false);
+    	selectedModifiers.add(temporaryModifier);
+    	currentModifiersField.appendText(temporaryModifier.toString() + "\n");
     }
 
     public void handleRollDice() {
