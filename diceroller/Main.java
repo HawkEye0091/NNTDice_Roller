@@ -16,12 +16,8 @@ public class Main extends Application {
     static File databaseFile = new File("Modifiers.txt");
 
     public static void main(String[] args) throws IOException {
-        System.out.println("Main");
         readModifiers(rollModifiers, databaseFile);
-        System.out.println(rollModifiers);
-
         rollModifiers.sort(new DescriptionSorter());
-        System.out.println(rollModifiers);
 
         launch(args);
     }
@@ -40,13 +36,9 @@ public class Main extends Application {
         BufferedReader lineReader = new BufferedReader(new FileReader(dataFile));
         String checkLine;
 
-        int count = 1;
         while ((checkLine = lineReader.readLine()) != null) {
             Modifier falseModifier = new Modifier(0, null, false);
             Modifier trueModifier = new Modifier(0, null, true, null);
-
-            System.out.print(count + ", ");
-            count++;
 
             Scanner lineProcessor = new Scanner(checkLine);
             Pattern delimiter = lineProcessor.delimiter();
@@ -58,7 +50,6 @@ public class Main extends Application {
 
             if (lineProcessor.hasNextInt()) {
                 modifierValue = lineProcessor.nextInt();
-                System.out.print(modifierValue + "=value ");
 
                 falseModifier.setValue(modifierValue);
                 trueModifier.setValue(modifierValue);
@@ -76,7 +67,6 @@ public class Main extends Application {
 
                 lineProcessor.useDelimiter(delimiter);
                 lineProcessor.next();
-                System.out.print(modifierDescription + "=description ");
 
                 falseModifier.setDescription(modifierDescription);
                 trueModifier.setDescription(modifierDescription);
@@ -84,7 +74,6 @@ public class Main extends Application {
 
             if (lineProcessor.hasNextBoolean()) {
                 modifierIsCritical = lineProcessor.nextBoolean();
-                System.out.print(modifierIsCritical + "=critical ");
                 if (modifierIsCritical) {
                     trueModifier.setHasCritical(true);
                     while (lineProcessor.hasNextInt()) {
@@ -92,8 +81,6 @@ public class Main extends Application {
                     }
                     trueModifier.setCriticalValues(modifierCriticalValues);
                     allModifiers.add(trueModifier);
-
-                    System.out.print(modifierCriticalValues + "=critical values");
                 } else {
                     falseModifier.setHasCritical(false);
                     allModifiers.add(falseModifier);
@@ -101,7 +88,6 @@ public class Main extends Application {
             }
 
             lineProcessor.close();
-            System.out.println();
         }
         lineReader.close();
     }

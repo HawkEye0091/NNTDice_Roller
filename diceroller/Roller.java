@@ -1,10 +1,12 @@
 package diceroller;
 
+import javafx.scene.control.TextArea;
+
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Roller {
-    public static void roll(int dice, ArrayList<Modifier> startModifiers, Controller controller) {
+    public static void roll(int dice, ArrayList<Modifier> startModifiers, TextArea outputArea) {
         ArrayList<Integer> rolls = new ArrayList<>();
         ArrayList<ArrayList<Modifier>> explosionModifiers = new ArrayList<>();
         ArrayList<Integer> rollSums = new ArrayList<>();
@@ -78,31 +80,31 @@ public class Roller {
             }
 
             if (i == 0) {
-                controller.outputArea.appendText("QM Roll 1 = " + rolls.get(i));
+                outputArea.appendText("QM Roll 1 = " + rolls.get(i));
                 for (Modifier modifier : explosionModifiers.get(i)) {
-                    controller.outputArea.appendText("+" + modifier.getValue() + "(" + modifier.getDescription() + ")");
+                    outputArea.appendText("+" + modifier.getValue() + "(" + modifier.getDescription() + ")");
                 }
-                controller.outputArea.appendText("=" + rollSums.get(i) + "\n");
+                outputArea.appendText("=" + rollSums.get(i) + "\n");
             } else if (i == 1) {
-                controller.outputArea.appendText("Crit Roll = " + rolls.get(i));
+                outputArea.appendText("Crit Roll = " + rolls.get(i));
                 for (Modifier modifier : explosionModifiers.get(i)) {
                     if (modifier.isHasCritical()) {
-                        controller.outputArea.appendText("+" + modifier.getValue() + appendStars + "(" + modifier.getDescription() + ")");
+                        outputArea.appendText("+" + modifier.getValue() + appendStars + "(" + modifier.getDescription() + ")");
                     } else {
-                        controller.outputArea.appendText("+" + modifier.getValue() + "(" + modifier.getDescription() + ")");
+                        outputArea.appendText("+" + modifier.getValue() + "(" + modifier.getDescription() + ")");
                     }
                 }
-                controller.outputArea.appendText("=" + rollSums.get(i) + appendStars + "\n");
+                outputArea.appendText("=" + rollSums.get(i) + appendStars + "\n");
             } else {
-                controller.outputArea.appendText("Crit Roll " + (i) + " = " + rolls.get(i));
+                outputArea.appendText("Crit Roll " + (i) + " = " + rolls.get(i));
                 for (Modifier modifier : explosionModifiers.get(i)) {
                     if (modifier.isHasCritical()) {
-                        controller.outputArea.appendText("+" + modifier.getValue() + appendStars + "(" + modifier.getDescription() + ")");
+                        outputArea.appendText("+" + modifier.getValue() + appendStars + "(" + modifier.getDescription() + ")");
                     } else {
-                        controller.outputArea.appendText("+" + modifier.getValue() + "(" + modifier.getDescription() + ")");
+                        outputArea.appendText("+" + modifier.getValue() + "(" + modifier.getDescription() + ")");
                     }
                 }
-                controller.outputArea.appendText("=" + rollSums.get(i) + appendStars + "\n");
+                outputArea.appendText("=" + rollSums.get(i) + appendStars + "\n");
             }
         }
 
@@ -111,6 +113,6 @@ public class Roller {
         for (int sums : rollSums) {
             totalSum += sums;
         }
-        controller.outputArea.appendText("Final =" + totalSum + "\n\n");
+        outputArea.appendText("Final =" + totalSum + "\n\n");
     }
 }
